@@ -1,0 +1,34 @@
+# Node.js dependencies
+node_modules/
+
+# Compiled JavaScript files from TypeScript
+dist/
+
+# TypeScript cache files
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Debugging artifacts
+.vscode/
+
+# Jest testing coverage and reports
+coverage/
+
+# IDE specific files
+.DS_Store
+.idea/
+
+# ESLint cache
+.eslintcache
+
+# Prettier formatting file
+.prettiercache

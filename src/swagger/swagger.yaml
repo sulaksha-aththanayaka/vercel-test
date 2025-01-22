@@ -1,0 +1,13 @@
+openapi: 3.0.0
+info:
+  title: 30 Iland Service
+  description: API documentation
+  version: 1.0.0
+servers:
+  - url: http://localhost:3000/api/v1
+# paths:
+#   /users:
+#     $ref: './user-management/user.yaml'
+# components:
+#   schemas:
+#     $ref: './user-management/user-schema.yaml'

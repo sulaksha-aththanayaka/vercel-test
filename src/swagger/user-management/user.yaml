@@ -1,0 +1,64 @@
+paths:
+  /user/register:
+    post:
+      tags:
+        - User Management
+      summary: "Add User"
+      produces:
+        - application/json
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: 
+                email:
+                  type: string
+                  description: "Email of the user"
+                  example: "johndoe@example.com"
+                password:
+                  type: string
+                  description: "Password for the user"
+                  example: "securepassword123"
+      responses:
+        200:
+          description: "User added successfully"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        500:
+          description: "Internal server error"
+
+  /user/login:
+    post:
+      tags:
+        - User Management
+      summary: "Log User"
+      produces:
+        - application/json
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: "Email of the user"
+                  example: "johndoe@example.com"
+                password:
+                  type: string
+                  description: "Password of the user"
+                  example: "securepassword123"
+      responses:
+        200:
+          description: "User logged in successfully"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        500:
+          description: "Internal server error"

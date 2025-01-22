@@ -1,0 +1,29 @@
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: 'Unique identifier for the user'
+          example: '66fa623e7f79c4458430a5cd'
+        first_name:
+          type: string
+          description: 'Firstname of the user'
+          example: 'johndoe'
+        last_name:
+          type: string
+          description: 'Last name of the user'
+          example: 'johndoe'
+        email:
+          type: string
+          description: 'Email of the user'
+          example: 'johndoe@example.com'
+        mobile:
+          type: string
+          description: 'Mobile Number of the user'
+          example: '+941234567890'
+        role:
+          type: string
+          description: 'Role of the user in the system'
+          example: 'admin'
